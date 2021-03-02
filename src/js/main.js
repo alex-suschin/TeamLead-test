@@ -75,7 +75,22 @@ $(function() {
     }
 
     var deadline = "March 08 2021 00:00:00 GMT+0300";
-    // var deadline = new Date(Date.parse(new Date()));
     initializeClock('countdown', deadline);
+
+
+
+});
+
+$(window).on('load resize', function() {
+
+    var width = $(window).width();
+
+    if (width < '531') {
+        $('.contain-mainimg').prependTo($('.contain-box'));
+    }
+
+    if (width > '530') {
+        $('.contain-mainimg').insertAfter($('.contain-box__left'));
+    }
 
 });

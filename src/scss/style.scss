@@ -131,6 +131,12 @@ img {
     position: relative;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
 input:not([type=checkbox]):not([type=radio]),
 textarea,
 select {
@@ -725,8 +731,181 @@ form {
     a:focus {
         outline: none;
     }
+    h1 {
+        font-size: 42px;
+    }
+    .contain-title {
+        font-size: 18px;
+    }
+    .promo__right p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 140%;
+    }
+    .slick-prev,
+    .slick-next {
+        top: 115%;
+    }
+    .slick-prev {
+        left: 15px;
+    }
+    .slick-next {
+        right: 15px;
+    }
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before {
+        opacity: 0.5;
+    }
+    .slick-dots li button:active:before,
+    .slick-dots li button:active:before {
+        opacity: 1;
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus {
+        background: yellow;
+        opacity: 1;
+    }
+    .slick-prev:active,
+    .slick-next:active {
+        background: yellow;
+        opacity: .75;
+    }
 }
 
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 900px) {
+    .contain-mainimg {
+        width: 45%;
+    }
+    .form-box {
+        flex-direction: column;
+    }
+    .form-box__left,
+    .form-box__right {
+        width: 100%;
+    }
+    .form-box__left {
+        margin-bottom: 35px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 1.25;
+        text-transform: none;
+    }
+    .countdown-number {
+        padding: 6px;
+    }
+    .countdown-text {
+        font-size: 16px;
+    }
+    .old-price {
+        font-size: 20px;
+    }
+    .new-price {
+        font-size: 28px;
+    }
+    form .title {
+        font-size: 24px;
+    }
+}
 
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .promo-box {
+        flex-direction: column;
+    }
+    .promo__left {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .promo__right {
+        width: 100%;
+    }
+    ul:not(.slick-dots) li {
+        font-size: 18px;
+    }
+    ul:not(.slick-dots) li:after {
+        top: 5px;
+    }
+    .rewiews-name {
+        font-size: 18px;
+    }
+    .rewiews-img {
+        flex-shrink: 0;
+    }
+    .rewiews-itet__bottom {
+        font-size: 15px;
+    }
+    .contain-title {
+        font-size: 16px;
+    }
+    .contain-mainimg {
+        width: 35%;
+    }
+    .contain-box__left,
+    .contain-box__right {
+        width: 30%;
+    }
+    .header {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .contain-mainimg {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .contain img,
+    .form-wrap img {
+        max-height: 310px;
+    }
+    .contain-box__left,
+    .contain-box__right {
+        width: 100%;
+    }
+    .header-box {
+        flex-direction: column;
+    }
+    .header__left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .header__right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ul:not(.slick-dots) {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .header .btn {
+        width: 280px;
+        flex-shrink: 0;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .header img {
+        max-height: 310px;
+    }
+    .contain-box {
+        flex-direction: column;
+    }
+    .contain-item {
+        margin-bottom: 25px;
+    }
+}
