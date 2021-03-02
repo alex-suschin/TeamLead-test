@@ -36,6 +36,7 @@
 		"vinyl-ftp": "^0.6.1"
 	},
 	"dependencies": {
+		"aos": "^3.0.0-beta.6",
 		"gulp-favicons": "^3.0.0",
 		"gulp-rigger": "^0.5.8",
 		"gulp-tinypng-compress": "^1.2.5",

@@ -1,5 +1,7 @@
 $(function() {
 
+    AOS.init();
+
     $('.rewiews-slider').slick({
         dots: true,
         infinite: true,
@@ -11,7 +13,7 @@ $(function() {
 
     jQuery(".btn").click(function() {
         elementClick = jQuery(this).attr("href")
-        destination = jQuery(elementClick).offset().top;
+        destination = jQuery(elementClick).offset().top + 100;
         jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 700);
         return false;
     });

@@ -1,0 +1,1 @@
+import AOS from 'aos';
