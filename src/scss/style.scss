@@ -157,6 +157,14 @@ h1 {
     animation-timing-function: linear;
 }
 
+h2 {
+    font-size: 38px;
+    margin-top: 0;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -381,6 +389,101 @@ h1 {
     position: relative;
     padding: 75px 0;
     background: linear-gradient(to top, #237dd1, #14aa71);
+}
+
+.rewiews-item {
+    border: 2px solid yellow;
+    padding: 18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.rewiews-item__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rewiews-name {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.rewiews-img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    margin-right: 25px;
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.rewiews-itet__bottom {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.25;
+}
+
+.rewiews-item {
+    outline: none;
+    margin: 0 15px;
+}
+
+.slick-prev,
+.slick-next {
+    width: 35px;
+    height: 35px;
+    background: yellow;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #237ecf;
+    font-size: 15px;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    background: yellow;
+    opacity: .75;
+}
+
+.slick-dots li button:before {
+    font-size: 27px;
+    color: yellow;
+    opacity: .5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: yellow;
+    opacity: 1;
 }
 
 

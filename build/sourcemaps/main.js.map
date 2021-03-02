@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","file":"../js/main.js","sourcesContent":["$(function() {\r\n\r\n\r\n\r\n});"]}
+{"version":3,"sources":["main.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"../js/main.js","sourcesContent":["$(function() {\r\n\r\n    $('.rewiews-slider').slick({\r\n        dots: true,\r\n        infinite: true,\r\n        speed: 500,\r\n        fade: true,\r\n        slidesToShow: 1,\r\n        adaptiveHeight: true\r\n    });\r\n\r\n});"]}
