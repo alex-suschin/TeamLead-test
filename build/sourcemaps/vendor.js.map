@@ -1,0 +1,1 @@
+{"version":3,"sources":["vendor.js"],"names":[],"mappings":"MAAA","file":"../js/vendor.js","sourcesContent":["import \"../../node_modules/materialize-css/js/global\";"]}
